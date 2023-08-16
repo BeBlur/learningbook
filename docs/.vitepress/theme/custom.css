@@ -1,0 +1,67 @@
+/* .vitepress/theme/custom.css */
+:root {
+  --vp-c-white: #ffffff;
+  --vp-c-black: #000000;
+  --vp-c-gray: #8e8e93;
+
+  --vp-c-text-light-1: rgba(60, 60, 67);
+  --vp-c-text-light-2: rgba(60, 60, 67, 0.75);
+  --vp-c-text-light-3: rgba(60, 60, 67, 0.33);
+
+  --vp-c-text-dark-1: rgba(255, 255, 245, 0.86);
+  --vp-c-text-dark-2: rgba(235, 235, 245, 0.6);
+  --vp-c-text-dark-3: rgba(235, 235, 245, 0.38);
+
+  --vp-c-sponsor: #db2777;
+}
+
+/**
+ * Colors Theme
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-c-brand: #10b981;
+  --vp-c-brand-light: #34d399;
+  --vp-c-brand-lighter: #6ee7b7;
+  --vp-c-brand-dark: #059669;
+  --vp-c-brand-darker: #047857;
+  --vp-c-brand-dimm-1: rgba(16, 185, 129, 0.05);
+  --vp-c-brand-dimm-2: rgba(16, 185, 129, 0.2);
+  --vp-c-brand-dimm-3: rgba(16, 185, 129, 0.5);
+
+  --title-c-text: #1a1b1b;
+}
+
+.dark {
+    --title-c-text: #fff;
+  --vp-c-brand: #10b981;
+  --vp-c-brand-light: #34d399;
+  --vp-c-brand-lighter: #6ee7b7;
+  --vp-c-brand-lightest: #a7f3d0;
+  --vp-c-brand-dark: #059669;
+  --vp-c-brand-darker: #047857;
+  --vp-c-brand-darkest: #065f46;
+  --vp-c-brand-dimm-1: rgba(16, 185, 129, 0.05);
+  --vp-c-brand-dimm-2: rgba(16, 185, 129, 0.2);
+  --vp-c-brand-dimm-3: rgba(16, 185, 129, 0.5);
+}
+.title>.VPNavBarTitle>a {
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace ;
+    background: linear-gradient( 90deg, var(--vp-c-brand) 0%, var(--vp-c-brand) 40%, var(--title-c-text) 40%, var(--title-c-text) 40%);
+    background: linear-gradient( 90deg, var(--vp-c-brand) 0%, var(--vp-c-brand) 40%, var(--title-c-text) 40%, var(--title-c-text) 40%);
+
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation: wave 5000ms ease alternate infinite;
+    transition: all 0.4s ease;
+}
+/* @keyframes wave {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50vw 10px;
+    }
+  } */
